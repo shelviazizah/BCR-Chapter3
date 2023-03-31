@@ -1,0 +1,412 @@
+body {
+    font-family: Helvetica;
+    font-size: 14px;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0em;
+}
+
+h5 {
+    font-family: Helvetica;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.container-global {
+    padding: 25px 10vw;
+}
+
+nav {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.container-global .section-navbar {
+    position: fixed;
+}
+
+ul {
+    list-style: none;
+}
+
+#logo {
+    height: 34px;
+    width: 100px;
+    left: 136px;
+    top: 25px;
+    border-radius: 0px;
+    background-color: #0D28A6;
+}
+
+.bg-grey {
+    background-color: #F1F3FF;
+}
+
+.bg-white {
+    background-color: #ffffff;
+}
+
+.bg-red {
+    background-color: red;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.gap-16 {
+    gap: 16px;
+}
+
+.gap-32 {
+    gap: 32px;
+}
+
+.no-mp {
+    margin: 0;
+    padding: 0;
+}
+
+.link-no-decoration {
+    text-decoration: none;
+    color: #000;
+}
+
+.btn-success {
+    background: #5CB85F;
+    border-radius: 2px;
+    border: none;
+}
+
+#sidebar-menu {
+    display: none;
+}
+
+.btn-burger-menu {
+    border: none;
+    background-color: transparent;
+}
+
+#img-car {
+    width: 126%;
+}
+
+#img-woman {
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.row {
+    margin-bottom: -25px;
+    padding-top: 10px;
+}
+
+.list-group-item {
+    background-color: transparent;
+    border: 0;
+    padding: 0.1em;
+}
+
+.list-section {
+    padding: 3em;
+    padding-right: 2em;
+}
+
+#checklist {
+    width: 20px;
+    height: 20px;
+    margin: 7px;
+}
+
+.section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#before-faq {
+    display: block;
+    width: 79vw;
+    height: 220px;
+    padding: 50px;
+    background-color: #0D28A6;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+}
+
+.accordion-button {
+    padding: 0.5rem 1rem;
+}
+
+.border {
+    margin: 0.6rem 0;
+}
+
+.border-radius-5 {
+    border-radius: 5px;
+    box-shadow: bisque;
+    border-width: 5px;
+}
+
+.img-testi {
+    width: 50px;
+    margin: 0 0;
+    padding-left: 30px;
+    padding-top: 40px;
+}
+
+.font-weight-bold {
+    font-weight: 700;
+}
+
+.img-star {
+    width: 20% !important;
+    padding: 5px 0;
+}
+
+.col-sm-2 {
+    padding: 0;
+    margin: 0;
+}
+
+.col-sm-10 {
+    padding-left: 30px;
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 74vh;
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+
+.wrapper .owl-nav {
+    color: black;
+    font-weight: 700;
+    padding: 0;
+    font-size: 1.8rem !important;
+}
+
+.wrapper .owl-prev.active,
+.wrapper .owl-next.active span {
+    background-color: #5CB85F;
+}
+
+.wrapper .owl-prev.hover,
+.wrapper .owl-next.hover span {
+    background-color: white;
+}
+
+.wrapper .owl-prev.hover,
+.wrapper .owl-next.hover span:hover {
+    background-color: green;
+
+
+}
+
+.wrapper .owl-dot.active span {
+    background-color: #5CB85F;
+}
+
+.wrapper .owl-dot.hover span {
+    background-color: white;
+}
+
+.wrapper .owl-prev,
+.wrapper .owl-next {
+    background-color: #ffffff !important;
+
+    margin: 20px !important;
+    border-radius: 50px !important;
+    padding: 20px !important;
+    width: 50px;
+    height: 50px;
+    border: 1px solid grey !important;
+}
+
+.wrapper .owl-prev:hover,
+.wrapper .owl-next:hover {
+
+    background-color: #5CB85F !important;
+}
+
+.owl-dot {
+    display: none !important;
+}
+
+#testimonial {
+    padding: 0;
+}
+
+.card {
+    margin-top: -50px;
+    padding: 20px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    border-left: none;
+}
+
+input[type="text"]::-webkit-inner-spin-button,
+input[type="text"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="text"] {
+    border-right: none;
+}
+
+input[type="text"]::-webkit-calendar-picker-indicator {
+    border-left: none;
+}
+
+select::-webkit-inner-spin-button,
+select::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+select {
+    border-right: none;
+}
+
+select::-webkit-calendar-picker-indicator {
+    border-left: none;
+    background-image: url("https://cdn-icons-png.flaticon.com/512/25/25694.png");
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+
+.form-group {
+    width: 200px;
+}
+
+.search_car {
+    margin-top: 21px;
+}
+
+@media only screen and (max-width: 576px) {
+    .container-global {
+        padding: 24px 16px;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    #sidebar-menu {
+        display: block;
+    }
+
+    #offcanvasRight {
+        width: 50%;
+    }
+
+    #img-car {
+        width: 104.2%;
+        margin-top: 20px;
+    }
+
+    #img-woman {
+        margin-right: 5px;
+        margin-bottom: 5px;
+        padding: 20px 15px;
+    }
+
+    #logo {
+        margin-left: .2em;
+    }
+
+    .row {
+        margin-top: -34px;
+    }
+
+    .list-section {
+        padding: 0px 16px;
+    }
+
+    #checklist {
+        margin: 5px 0;
+    }
+
+    .title-why-us {
+        text-align: center;
+    }
+
+    p.title-why-us {
+        padding-bottom: 20px;
+    }
+
+    #before-faq {
+        display: block;
+        width: 92vw;
+        height: 350px;
+        background-color: #0D28A6;
+        padding: 52px;
+        color: white;
+        margin-left: 0;
+        margin-top: -10px;
+    }
+
+    .border {
+        margin: 0.6rem 0;
+    }
+
+    .img-testi {
+        margin: 1px 4em;
+        width: 50% !important;
+    }
+
+    .col-sm-2 {
+        padding: 10px;
+        margin: 0;
+    }
+
+    .card {
+        margin-top: 20px;
+        padding: -1em !important;
+    }
+
+    .img-star {
+        margin-left: 7em;
+    }
+
+    #testimonial {
+        padding: 24px 16px;
+    }
+
+    .to-right {
+        text-align: center;
+    }
+
+
+}

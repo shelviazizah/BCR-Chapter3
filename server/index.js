@@ -1,38 +1,22 @@
 console.log("Implement servermu disini yak 😝!");
 
-const http = require('http');
-const PORT = 3000;
-const url = require('url')
+const express = require('express');
+const app = express();
+const port = 8000;
+const path = require('path')
 
-function onRequest(req, res) {
-    console.log('request', req)
-    res.writeHead(200);
-    res.end("Halo, this is from server!");
-}
+const publicDir = path.join(__dirname, '../public')
+app.use(express.static(publicDir))
 
-const server = http.createServer(onRequest);
-
-server.listen(PORT, '127.0.0.1', () => {
-    console.log("Server sudah berjalan")
+app.get('/', (reeq, res) => {
+    res.status(200);
+    res.sendFile(path.join(publicDir, 'index.example.html'))
+})
+app.get('/cars', (reeq, res) => {
+    res.status(200);
+    res.sendFile(path.join(publicDir, 'carimobil.html'))
 })
 
-const fs = require('fs');
-const path = require('path');
-const { url } = require('inspector');
-
-console.log('__dirname', __dirname, '../public')
-
-function onRequest(req, res) {
-    const parseUrl = url.parse(req.url);
-    let pathUrl = parseUrl.pathname
-
-    fs.readFile()
-
-    const htmlFile = path.join(PUBLIC_DIRECTORY, 'index.html')
-    const html = fs.readFileSync(htmlFile, 'utf-8');
-
-    console.log(req.url)
-    res.setHeader('Content-Type', 'text/html')
-    res.writeHead(200);
-    res.end(html);
-}
+app.listen(port, () => {
+    console.log("server sudah jalan")
+})

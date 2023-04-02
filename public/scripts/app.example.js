@@ -1,21 +1,21 @@
 class App {
   constructor() {
-    this.clearButton = document.getElementById("clear-btn");
-    this.loadButton = document.getElementById("load-btn");
+    // this.clearButton = document.getElementById("clear-btn");
+    // this.loadButton = document.getElementById("load-btn");
     this.carContainerElement = document.getElementById("cars-container");
 
     this.inputDate = document.getElementById("inputDate");
     this.inputTime = document.getElementById("inputTime");
     this.inputCapacity = document.getElementById("inputCapacity");
-    this.searchBtn = document.getElementById("searchBtn");
+    this.searchBtn = document.getElementById("load-btn");
   }
 
   async init() {
     await this.load();
 
     // Register click listener
-    this.clearButton.onclick = this.clear;
-    this.loadButton.onclick = this.run;
+    // this.clearButton.onclick = this.clear;
+    // this.loadButton.onclick = this.run;
     this.searchBtn.onclick = this.search;
   }
 
@@ -27,7 +27,7 @@ class App {
     const timeValue = this.inputTime.value;
     const capacityValue = this.inputCapacity.value;
 
-    if (!timeValue || !dateValue || !capacityValue) {
+    if (!timeValue || !dateValue) {
       alert('Mohon isi terlebih dahulu')
     }
 
@@ -38,7 +38,7 @@ class App {
     // function filter
     const filterer = (car) => {
       const dateFilter = car.availableAt > datetime;
-      const capacityFilter = car.capacity > capacityValue;
+      const capacityFilter = car.capacity >= capacityValue;
 
       return dateFilter && capacityFilter;
     }

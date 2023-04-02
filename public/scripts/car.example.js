@@ -43,7 +43,7 @@ class Car {
 
     return `
     <div class="col=lg-4 col-md-4 col-sm-12 mx-2">
-      <div class="card mx-0 my-4 g-0"  style="width: 18rem; box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);">
+      <div class="card mx-2 my-2 g-0"  style="width: 18.4rem; box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);">
           <img src="${this.image}" class="card-img-top img-fluid" alt="${this.manufacture}" style="height: 195px; border-radius: 3px; object-fit: cover;" />
           <div class="card-body" style="font-size: 14px">
               <p class="card-title">${this.manufacture} ${this.model}</p>

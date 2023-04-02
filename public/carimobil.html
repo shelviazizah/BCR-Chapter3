@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="author" content="Sabrina" />
+    <meta name="description" content="Lorem ipsum dolor sit amet" />
+    <meta name="viewport"
+        content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <title>Binar: Challenge 04</title>
+
+    <!-- Example CSS -->
+    <link href="./css/style.example.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+</head>
+
+<body>
+
+    <!--Navbar-->
+    <nav class="container-global bg-grey">
+        <div id="logo"></div>
+        <ul class="flex-row gap-32 no-mp nav-list">
+            <li>
+                <a class="link-no-decoration" href="#our-services">Our Services</a>
+            </li>
+            <li><a class="link-no-decoration" href="#why-us">Why Us</a></li>
+            <li>
+                <a class="link-no-decoration" href="#testimonial">Testimonial</a>
+            </li>
+            <li><a class="link-no-decoration" href="#faq">FAQ</a></li>
+            <li><button class="btn btn-success">Register</button></li>
+        </ul>
+        <button id="sidebar-menu" class="btn-burger-menu" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight">
+            <img src="images/menu.svg" alt="Burger Menu" width="24px" height="24px" />
+        </button>
+    </nav>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 id="offcanvasRightLabel">BCR</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="flex-column gap-16 no-mp">
+                <li>
+                    <a class="link-no-decoration" href="#our-services">Our Services</a>
+                </li>
+                <li><a class="link-no-decoration" href="#why-us">Why Us</a></li>
+                <li>
+                    <a class="link-no-decoration" href="#testimonial">Testimonial</a>
+                </li>
+                <li><a class="link-no-decoration" href="#faq">FAQ</a></li>
+                <li><button class="btn btn-success">Register</button></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--SECTION 1 LANDING PAGE-->
+    <section id="landing" class="container-global bg-grey">
+        <div class="row">
+            <div class="col-sm-6 pt-5 description bg-grey">
+                <h2>Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)</h2>
+                <p>
+                    Selamat Datang di Binar Car Rental. Kami menyediakan mobil kualitas
+                    terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu
+                    untuk sewa mobil selama 24 jam.
+                </p>
+            </div>
+            <div class="col-sm-6">
+                <img src="images/img_car.png" alt="Image Car" id="img-car" /> sw
+            </div>
+        </div>
+    </section>
+
+    <!--SECTION SEARCH CAR-->
+    <div class="card w-75 container-fluid">
+        <form>
+            <div class="d-flex justify-content-lg-evenly">
+                <div class="form-group">
+                    <label class="pb-1" for="driver-type">Tipe Driver</label>
+                    <select class="form-select font-14" id="driver-type" name="driver-type" required>
+                        <option class="font-14" value="">Pilih tipe driver</option>
+                        <option class="font-14" value="dengan-sopir">Dengan sopir</option>
+                        <option class="font-14" value="tanpa-sopir">Tanpa sopir (lepas kunci)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="pb-1" for="">Tanggal</label>
+                    <div class="input-group">
+                        <input type="date" id="inputDate" class="form-control font-14" placeholder="Tanggal"
+                            aria-label="Tanggal" aria-describedby="basic-addon2" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="pb-1" for="">Waktu Jemput/Ambil</label>
+                    <div class="input-group">
+                        <select class="form-select font-14" id="inputTime" name="inputTime" required>
+                            <option class="font-14" value="">Pilih waktu</option>
+                            <option class="font-14" value="08:00">01:00</option>
+                            <option class="font-14" value="08:00">02:00</option>
+                            <option class="font-14" value="08:00">03:00</option>
+                            <option class="font-14" value="08:00">04:00</option>
+                            <option class="font-14" value="08:00">05:00</option>
+                            <option class="font-14" value="08:00">06:00</option>
+                            <option class="font-14" value="08:00">07:00</option>
+                            <option class="font-14" value="08:00">08:00</option>
+                            <option class="font-14" value="09:00">09:00</option>
+                            <option class="font-14" value="09:00">10:00</option>
+                            <option class="font-14" value="09:00">11:00</option>
+                            <option class="font-14" value="09:00">12:00</option>
+                            <option class="font-14" value="09:00">13:00</option>
+                            <option class="font-14" value="09:00">14:00</option>
+                            <option class="font-14" value="09:00">15:00</option>
+                            <option class="font-14" value="09:00">16:00</option>
+                            <option class="font-14" value="09:00">18:00</option>
+                            <option class="font-14" value="09:00">19:00</option>
+                            <option class="font-14" value="09:00">20:00</option>
+                            <option class="font-14" value="09:00">21:00</option>
+                            <option class="font-14" value="09:00">22:00</option>
+                            <option class="font-14" value="09:00">23:00</option>
+                            <option class="font-14" value="09:00">24:00</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="pb-1" for="">Jumlah Penumpang (Optional)</label>
+                    <div class="input-group">
+                        <input type="text" id="inputCapacity" class="form-control font-14"
+                            placeholder="Jumlah Penumpang" aria-label="Jumlah Penumpang"
+                            aria-describedby="basic-addon2" />
+                        <span class="input-group-text bg-white" id="basic-addon2"><i
+                                class="fa fa-user-friends"></i></span>
+                    </div>
+                </div>
+                <div class="align-center search_car">
+                    <span>
+                        <button id="load-btn" class="btn btn-success px-3" type="button">
+                            Cari Mobil
+                        </button>
+                    </span>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!--SECTION BUTTON-->
+
+    <div class="container-global">
+        <div id="cars-container">
+
+        </div>
+    </div>
+
+    <!--SECTION 3 SOSMED-->
+    <section class="container-global pt-5 mt-5 pb-5 mb-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <p>Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000</p>
+                <p>binarcarrental@gmail.com</p>
+                <p>081-233-334-808</p>
+            </div>
+            <div class="col-sm-3">
+                <p>Our Services</p>
+                <p>Why Us</p>
+                <p>Testimonial</p>
+                <p>FAQ</p>
+            </div>
+            <div class="col-sm-3">
+                <p>Connect with us</p>
+                <p><img src="images/img_sosmed.png" alt="" /></p>
+            </div>
+            <div class="col-sm-3">
+                <p>Copyright Binar 2022</p>
+                <div id="logo"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Example Javascript -->
+    <script type="text/javascript" src="./scripts/binar.js"></script>
+    <script type="text/javascript" src="./scripts/app.example.js"></script>
+    <script type="text/javascript" src="./scripts/car.example.js"></script>
+    <script type="text/javascript" src="./scripts/main.example.js"></script>
+</body>
+
+</html>

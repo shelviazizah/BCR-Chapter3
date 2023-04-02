@@ -306,12 +306,62 @@ select::-webkit-calendar-picker-indicator {
     background-position: center right;
 }
 
-.form-group {
-    width: 200px;
-}
-
 .search_car {
     margin-top: 21px;
+}
+
+.form-select option {
+    height: 50px;
+    /* atur tinggi select option */
+    padding: 20px;
+    /* atur padding untuk membuat select option lebih lebar */
+}
+
+#cars-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 1em;
+    margin-right: 1 em;
+    justify-content: left;
+}
+
+.form-group {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    width: 190px;
+    color: #3C3C3C;
+}
+
+.font-14 {
+    font-size: 12px;
+    font-family: Helvetica;
+    color: #8A8A8A;
+    ;
+}
+
+.input-group {
+    width: 95%;
+}
+
+.form-select {
+    width: 95%;
+}
+
+option:nth-child():hover {
+    color: #ffffff;
+    background-color: #5CB85F;
+}
+
+.fa {
+    color: #8A8A8A;
+}
+
+#load-btn {
+    height: 32px;
+    padding-top: 4px;
 }
 
 @media only screen and (max-width: 576px) {

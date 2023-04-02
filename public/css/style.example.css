@@ -310,18 +310,11 @@ select::-webkit-calendar-picker-indicator {
     margin-top: 21px;
 }
 
-.form-select option {
-    height: 50px;
-    /* atur tinggi select option */
-    padding: 20px;
-    /* atur padding untuk membuat select option lebih lebar */
-}
-
 #cars-container {
     display: flex;
     flex-wrap: wrap;
     margin-left: 1em;
-    margin-right: 1 em;
+    margin-right: 1em;
     justify-content: left;
 }
 
@@ -343,16 +336,39 @@ select::-webkit-calendar-picker-indicator {
 }
 
 .input-group {
-    width: 95%;
+    width: 100%;
 }
 
-.form-select {
-    width: 95%;
+.form-select option {
+    height: 25px;
+    padding: 7px;
+    margin: 0;
 }
 
-option:nth-child():hover {
-    color: #ffffff;
-    background-color: #5CB85F;
+.form-select[size]:not([size="1"]) {
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: 5px;
+    background-image: none;
+}
+
+#driver-type,
+#inputTime {
+    padding-left: 10px;
+}
+
+option:hover {
+    color: #5CB85F;
+    background-color: #C9E7CA;
+}
+
+.d-flex {
+    display: flex !important;
+    gap: 15px;
+}
+
+option {
+    height: 10px;
 }
 
 .fa {

@@ -83,7 +83,8 @@
             <div class="d-flex justify-content-lg-evenly">
                 <div class="form-group">
                     <label class="pb-1" for="driver-type">Tipe Driver</label>
-                    <select class="form-select font-14" id="driver-type" name="driver-type" required>
+                    <select onfocus='this.size=3;' onblur='this.size=0;' onchange='this.size=0; this.blur();'
+                        class="form-select font-14" id="driver-type" name="driver-type" required>
                         <option class="font-14" value="">Pilih tipe driver</option>
                         <option class="font-14" value="dengan-sopir">Dengan sopir</option>
                         <option class="font-14" value="tanpa-sopir">Tanpa sopir (lepas kunci)</option>
@@ -99,7 +100,8 @@
                 <div class="form-group">
                     <label class="pb-1" for="">Waktu Jemput/Ambil</label>
                     <div class="input-group">
-                        <select class="form-select font-14" id="inputTime" name="inputTime" required>
+                        <select onfocus='this.size=5;' onblur='this.size=0;' onchange='this.size=0; this.blur();'
+                            class="form-select font-14" id="inputTime" name="inputTime" required>
                             <option class="font-14" value="">Pilih waktu</option>
                             <option class="font-14" value="08:00">01:00</option>
                             <option class="font-14" value="08:00">02:00</option>
